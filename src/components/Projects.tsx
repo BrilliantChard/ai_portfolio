@@ -7,101 +7,49 @@ const Projects = () => {
   
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A complete e-commerce solution with product management, shopping cart, payment processing, and order tracking functionalities.",
-      image: "https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
-      category: "fullstack",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API", "AWS S3"],
-      liveLink: "https://ecommerce-project.example.com",
-      githubLink: "https://github.com/johndoe/ecommerce-project",
-      features: [
-        "Responsive product catalog with advanced filtering",
-        "User authentication and profile management",
-        "Secure payment processing with Stripe",
-        "Order history and tracking",
-        "Admin dashboard for inventory management"
-      ]
-    },
-    {
-      title: "Task Management App",
-      description: "A productivity application for managing tasks, projects, and deadlines with team collaboration features.",
-      image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      category: "frontend",
-      technologies: ["Vue.js", "Vuex", "Firebase", "Tailwind CSS"],
-      liveLink: "https://task-app.example.com",
-      githubLink: "https://github.com/johndoe/task-management-app",
-      features: [
-        "Drag-and-drop task organization",
-        "Real-time updates with Firebase",
-        "Task categorization and priority settings",
-        "Deadline notifications and reminders",
-        "Team collaboration and task assignment"
-      ]
-    },
-    {
-      title: "Healthcare API",
-      description: "A secure API for healthcare providers to manage patient records, appointments, and medical histories.",
+      title: "Microstrip Patch Antenna Design and Simulation for 5G Applications",
+      description: "Designed and simulated a microstrip patch antenna using HFSS for 5G applications, achieving a significant increase in efficiency.",
       image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
-      category: "backend",
-      technologies: ["Express", "PostgreSQL", "JWT", "Jest", "Docker"],
-      liveLink: "https://healthcare-api-docs.example.com",
-      githubLink: "https://github.com/johndoe/healthcare-api",
+      category: "Antenna Design",
+      technologies: ["HFSS", "MATLAB", "5G", "Antenna Design"],
+      liveLink: "https://5g-antenna-design.example.com",
       features: [
-        "HIPAA-compliant data storage and transmission",
-        "Role-based access control",
-        "Comprehensive API documentation",
-        "Automated testing with 95% coverage",
-        "Containerized deployment for scalability"
+        "Designed a microstrip patch antenna for 5G applications",
+        "Conducted simulations using HFSS and MATLAB",
+        "Achieved a 15% increase in efficiency",
+        "Collaborated with senior engineers for design validation",
+        "Participated in field tests for IoT applications"
       ]
     },
     {
-      title: "Real Estate Marketplace",
-      description: "A platform connecting property buyers, sellers, and agents with property listings, search functionality, and messaging.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80",
+      title: "Samrt Farming IoT System",
+      description: "Developed an IoT-based smart farming system for real-time monitoring and control of agricultural parameters.",
+      image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+      category: "IoT",
+      technologies: ["Arduino", "Raspberry Pi", "MQTT", "Node-RED"],
+      features: [
+        "Real-time monitoring of soil moisture and temperature",
+        "Automated irrigation control based on sensor data",
+        "Data visualization using Node-RED dashboard",
+        "Remote access and control via mobile app",
+        "Integration with weather APIs for predictive analytics"
+      ]
+    },
+    {
+      title: "Exam Management System",
+      description: "A web-based application for managing student exams, including scheduling, grading, and reporting.",
+      image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
       category: "fullstack",
-      technologies: ["React", "Django", "PostgreSQL", "Redis", "Google Maps API"],
-      liveLink: "https://realestate-marketplace.example.com",
-      githubLink: "https://github.com/johndoe/realestate-marketplace",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
+      liveLink: "https://exam-management-system.example.com",
       features: [
-        "Advanced property search with multiple filters",
-        "Interactive maps for property locations",
-        "Virtual tours and property galleries",
-        "Agent-client messaging system",
-        "Appointment scheduling for viewings"
+        "User-friendly interface for students and instructors",
+        "Real-time notifications and updates",
+        "Secure exam scheduling and grading",
+        "Comprehensive reporting and analytics",
+        "Responsive design for mobile and desktop"
       ]
     },
-    {
-      title: "Budget Tracker Dashboard",
-      description: "A financial management application to track expenses, income, and budget goals with data visualization.",
-      image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
-      category: "frontend",
-      technologies: ["Angular", "Chart.js", "TypeScript", "SASS", "PWA"],
-      liveLink: "https://budget-tracker.example.com",
-      githubLink: "https://github.com/johndoe/budget-tracker",
-      features: [
-        "Interactive charts and spending analytics",
-        "Budget goal setting and tracking",
-        "Expense categorization and tagging",
-        "Recurring transaction management",
-        "Offline functionality with PWA"
-      ]
-    },
-    {
-      title: "Content Management System",
-      description: "A customizable CMS for websites, blogs, and digital content with user management and analytics.",
-      image: "https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      category: "backend",
-      technologies: ["Node.js", "MongoDB", "GraphQL", "AWS Lambda", "Redis"],
-      liveLink: "https://headless-cms.example.com",
-      githubLink: "https://github.com/johndoe/content-management-system",
-      features: [
-        "Headless architecture with API-first approach",
-        "Rich text editor with media management",
-        "Content versioning and scheduling",
-        "User roles and permissions",
-        "Content analytics and insights"
-      ]
-    }
   ];
   
   const filteredProjects = filter === 'all' 

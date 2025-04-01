@@ -19,9 +19,24 @@ const Skills = () => {
       skills: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "SQLite", "Firebase", "Oracle", "Microsoft SQL Server", "Elasticsearch"]
     },
     {
-      title: "DevOps",
-      icon: <Settings className="h-8 w-8 text-blue-600" />,
-      skills: ["Git", "Docker", "Kubernetes", "AWS", "Azure", "Google Cloud", "CI/CD", "Jenkins", "Terraform", "Ansible"]
+      title: "PCB Design",
+      icon: <Code className="h-8 w-8 text-blue-600" />,
+      skills: ["KiCAD", "Altium Designer", "Eagle", "OrCAD", "LTspice", "Multisim", "Proteus", "EasyEDA"]
+    },
+    {
+      title: "Antenna Design",
+      icon: <Code className="h-8 w-8 text-blue-600" />,
+      skills: ["HFSS", "CST Microwave Studio", "FEKO", "ADS", "MATLAB", "Ansys"]
+    },
+    {
+      title: "Electronics",
+      icon: <Code className="h-8 w-8 text-blue-600" />,
+      skills: ["Circuit Design", "Signal Processing", "RF Design", "Embedded Systems", "Microcontrollers", "FPGA", "PCB Layout"]
+    },
+    {
+      title: "Electrical Machines",
+      icon: <Code className="h-8 w-8 text-blue-600" />,
+      skills: ["AC Machines", "DC Machines", "Transformers", "Power Electronics", "Control Systems", "Signal Processing"]
     },
     {
       title: "Programming Languages",
@@ -43,12 +58,20 @@ const Skills = () => {
   ];
 
   const keySkills = [
+    { name: "Antenna Design", level: "Advanced" },
+    { name: "Electronics", level: "Expert" },
+    { name: "PCB Design", level: "Advanced" },
+    { name: "Networking", level: "Intermediate" },
     { name: "JavaScript", level: "Expert" },
     { name: "React", level: "Expert" },
     { name: "Node.js", level: "Advanced" },
     { name: "TypeScript", level: "Advanced" },
     { name: "PostgreSQL", level: "Advanced" },
-    { name: "AWS", level: "Intermediate" }
+    { name: "MATLAB", level: "Expert" },
+    { name: "Python", level: "Advanced" },
+    { name: "Django", level: "Intermediate" },
+    { name: "KiCAD", level: "Advanced" },
+    { name: "Signal Processing", level: "Expert" }
   ];
 
   return (

@@ -4,47 +4,48 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "Tech Innovations Inc.",
-      location: "San Francisco, CA",
-      duration: "January 2021 - Present",
-      description: "Leading the development of a microservices-based e-commerce platform, managing a team of 5 developers, and implementing CI/CD pipelines to streamline the deployment process.",
+      title: "Telecommunication Engineer",
+      company: "Kenya Broadcasting Corporation, KBC",
+      location: "Nairobi, Kenya",
+      duration: "January 2025 - Present",
+      description: "Responsible for the design, implementation, and maintenance of telecommunication systems, ensuring optimal performance and reliability.",
       achievements: [
-        "Reduced API response time by 40% through the optimization of database queries and implementation of caching strategies",
-        "Led the migration from a monolithic architecture to microservices, resulting in a 30% improvement in system scalability",
-        "Implemented comprehensive test automation that increased code coverage from 65% to 92%",
-        "Mentored junior developers through code reviews, pair programming, and technical workshops"
+        "Successfully led the upgrade of the transmission system, improving signal quality by 30%",
+        "Implemented a new monitoring system that reduced downtime by 20%",
+        "Collaborated with cross-functional teams to enhance network security protocols",
+        "Conducted training sessions for junior engineers on best practices in telecommunication systems"
       ],
-      technologies: ["React", "Node.js", "PostgreSQL", "Docker", "AWS", "GraphQL"]
+      technologies: ["RF Design", "Signal Processing", "Network Security", "Telecom Protocols", "Project Management"]
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Solutions Ltd.",
-      location: "Seattle, WA",
-      duration: "March 2018 - December 2020",
-      description: "Developed and maintained web applications for clients in healthcare, finance, and retail sectors, collaborating closely with product managers and designers to ensure optimal user experiences.",
+      title: "Electrical Engineer",
+      company: "KenGEN, Kenya",
+      location: "Naivasha, Kenya",
+      duration: "May 2023 - August 2023",
+      description: "Worked on the design and implementation of electrical systems for telecommunications infrastructure, focusing on energy efficiency and sustainability.",
       achievements: [
-        "Designed and implemented a real-time dashboard for healthcare providers, reducing patient wait times by 25%",
-        "Built a responsive web application that increased client's mobile conversion rate by 35%",
-        "Optimized database performance, reducing query times by 60% for high-traffic applications",
-        "Created reusable component libraries that accelerated development time for future projects by 40%"
+        "Designed a solar-powered base station that reduced energy costs by 40%",
+        "Implemented energy-saving protocols that decreased overall power consumption by 25%",
+        "Collaborated with the R&D team to develop new energy-efficient technologies",
+        "Conducted field tests and analysis to ensure compliance with safety standards"
       ],
-      technologies: ["Vue.js", "Express", "MongoDB", "Redis", "Azure", "REST API"]
+      technologies: ["AutoCAD", "MATLAB", "Energy Management Systems", "Telecom Infrastructure", "Project Management"]
     },
     {
-      title: "Junior Web Developer",
-      company: "StartUp Ventures",
-      location: "Austin, TX",
-      duration: "June 2016 - February 2018",
-      description: "Contributed to the development of the company's flagship product, a SaaS platform for project management, while collaborating with senior developers to learn best practices.",
+      title: "Telecom Engineer Intern",
+      company: "DeKUT, Kenya",
+      location: "Nyeri, Kenya",
+      duration: "June 2022 - August 2022",
+      description: "Assisted in the design and testing of telecommunication systems, gaining hands-on experience in RF design and signal processing.",
       achievements: [
-        "Implemented front-end features that enhanced user engagement by 28%",
-        "Participated in the redesign of the user interface, improving usability scores by 42%",
-        "Developed automated testing scripts that reduced QA time by 15%",
-        "Contributed to open-source projects, showcasing company expertise and improving community relations"
+        "Contributed to the design of a microstrip patch antenna for 5G applications, achieving a 15% increase in efficiency",
+        "Conducted simulations using HFSS and MATLAB, providing valuable insights for the R&D team",
+        "Participated in field tests for IoT applications in smart farming, improving data transmission rates by 20%",
+        "Collaborated with senior engineers to troubleshoot and resolve technical issues in existing systems"
       ],
-      technologies: ["HTML/CSS", "JavaScript", "Angular", "PHP", "MySQL", "Git"]
-    }
+      technologies: ["HFSS", "MATLAB", "IoT", "Signal Processing", "RF Design"]
+    },
+    
   ];
   
   return (

@@ -15,11 +15,11 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="md:w-1/2 space-y-6 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight">
-              Hi, I'm <span className="text-blue-600">John Doe</span>
+              Hi, I'm <span className="text-blue-600">Chard Odhiambo</span>
             </h1>
             <div className="h-1 w-20 bg-blue-600 mx-auto md:mx-0"></div>
             <h2 className="text-2xl md:text-3xl font-medium text-slate-600">
-              Software Developer
+              Software Developer & Telecom Engineer
             </h2>
             <p className="text-lg text-slate-600 max-w-xl">
               I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive.
@@ -39,7 +39,7 @@ const Hero = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white shadow-lg">
                 <img 
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
-                  alt="John Doe - Software Developer" 
+                  alt="Chard Odhiambo - Software Developer" 
                   className="w-full h-full object-cover"
                 />
               </div>

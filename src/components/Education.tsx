@@ -4,16 +4,16 @@ import { GraduationCap, Calendar, Award, BookOpen } from 'lucide-react';
 const Education = () => {
   const education = [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      location: "Stanford, CA",
-      duration: "2014 - 2016",
-      description: "Specialized in Artificial Intelligence and Machine Learning, with research focus on natural language processing algorithms.",
+      degree: "Barchelors Science in Telecommunication and Information Engineering",
+      institution: "Dedan Kimathi University of Technology",
+      location: "Nyeri, Kenya",
+      duration: "2020 - 2024",
+      description: "Focused on the principles of telecommunications, networking, and information systems. Developed a strong foundation in programming and software development.",
       achievements: [
-        "Graduated with distinction (GPA: 3.9/4.0)",
-        "Research Assistant in the Machine Learning Laboratory",
-        "Published paper on 'Efficient Neural Network Architectures for NLP Applications'",
-        "Received University Merit Scholarship for outstanding academic performance"
+        "Graduated with honors (GPA: 3.7/4.0)",
+        "President of the Engineering Science Club",
+        "Completed a thesis on '5G Network Optimization Techniques'",
+        "Internship at Safaricom Kenya in Network Engineering Department",
       ]
     },
     {
@@ -33,28 +33,24 @@ const Education = () => {
   
   const certifications = [
     {
-      title: "AWS Certified Solutions Architect - Professional",
-      issuer: "Amazon Web Services",
-      date: "2022",
-      id: "AWS-PSA-12345"
+      title: "PCB Design Using KiCAD - Professional",
+      issuer: "Udemy Acadmey",
+      date: "2024"
     },
     {
-      title: "Google Professional Cloud Developer",
-      issuer: "Google Cloud",
-      date: "2021",
-      id: "GPCD-98765"
+      title: "Network Security and Database Management",
+      issuer: "Cisco Networking Academy",
+      date: "2023"
     },
     {
-      title: "Microsoft Certified: Azure Developer Associate",
-      issuer: "Microsoft",
-      date: "2020",
-      id: "MCADA-54321"
+      title: "Digital Electronics Fundamentals",
+      issuer: "Mind Luster",
+      date: "2025"
     },
     {
-      title: "Certified Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2021",
-      id: "CKA-67890"
+      title: "Cisco Certified Network Associate (CCNA)",
+      issuer: "Mind Luster",
+      date: "2025"
     }
   ];
   
@@ -140,7 +136,7 @@ const Education = () => {
               </p>
               
               <ul className="list-disc pl-5 space-y-2 text-slate-600">
-                <li>Advanced Microservices Architectures</li>
+                <li>Software Engineering</li>
                 <li>Serverless Computing and FaaS (Function as a Service)</li>
                 <li>Progressive Web Applications (PWAs)</li>
                 <li>Machine Learning for Developers</li>

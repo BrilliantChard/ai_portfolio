@@ -17,33 +17,33 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-slate-800">John Doe</h3>
-              <p className="text-blue-600 font-medium">Software Developer</p>
+              <h3 className="text-xl font-semibold text-slate-800">Chard Odhiambo</h3>
+              <p className="text-blue-600 font-medium">Telecom Engineer & Software Developer</p>
               
               <div className="w-full mt-6 space-y-3">
                 <div className="flex items-center text-slate-600">
                   <User className="w-5 h-5 mr-3 text-blue-600" />
-                  <span>Male, 28 years</span>
+                  <span>Male, 23 years</span>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <MapPin className="w-5 h-5 mr-3 text-blue-600" />
-                  <span>San Francisco, CA</span>
+                  <span>Nairobi, Kenya</span>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <Mail className="w-5 h-5 mr-3 text-blue-600" />
-                  <a href="mailto:john.doe@example.com" className="hover:text-blue-600">john.doe@example.com</a>
+                  <a href="mailto:john.doe@example.com" className="hover:text-blue-600">chard.omollo25@gmail.com</a>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <Phone className="w-5 h-5 mr-3 text-blue-600" />
-                  <a href="tel:+1234567890" className="hover:text-blue-600">(123) 456-7890</a>
+                  <a href="tel:+1234567890" className="hover:text-blue-600">+2547 38979467</a>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <Calendar className="w-5 h-5 mr-3 text-blue-600" />
-                  <span>Available from October 2023</span>
+                  <span>Available from January 2025</span>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <Globe className="w-5 h-5 mr-3 text-blue-600" />
-                  <a href="https://www.johndoe.dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">www.johndoe.dev</a>
+                  <a href="https://www.johndoe.dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">www.chardotiato.dev</a>
                 </div>
               </div>
               
@@ -63,15 +63,15 @@ const About = () => {
           <div className="card h-full">
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">Professional Summary</h3>
             <p className="text-slate-600 mb-4">
-              I am a passionate software developer with 5+ years of experience specializing in full-stack web development. 
-              My expertise lies in building scalable, efficient, and user-friendly applications using modern technologies and best practices.
+            I am a Telecommunications Engineer with expertise in antenna design, signal processing, and wireless communication systems. 
+            My experience spans HFSS, Simulink, and PCB design (KiCad), with hands-on projects in 5G microstrip patch antennas, IoT smart farming, and power supply circuit design for vehicles. 
             </p>
             <p className="text-slate-600 mb-4">
-              Throughout my career, I have collaborated with cross-functional teams to deliver high-quality products that solve real-world problems. 
-              I am adept at translating business requirements into technical solutions and continuously strive to enhance my skills through constant learning and exploration.
+            I also specialize in backend development with Python (Django), frontend with React, and networking security (Cisco Certified). 
+            Whether it's IoT automation, PCB layouts, or fiber optic communications, I bring precision and innovation to every project. 
             </p>
             <p className="text-slate-600 mb-4">
-              When I'm not coding, I enjoy contributing to open-source projects, writing technical articles, and mentoring aspiring developers. 
+              When I'm not coding or designing, I enjoy contributing to open-source projects, writing technical articles, and mentoring aspiring developers. 
               I am driven by challenges and the opportunity to make a positive impact through technology.
             </p>
             
