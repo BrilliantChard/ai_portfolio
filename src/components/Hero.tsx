@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="bg-white p-4 rounded-full shadow-xl">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white shadow-lg">
                 <img 
-                  src="\IMAGES\chard.jpg" 
+                  src={require("../IMAGES/chard.jpg")} 
                   alt="Chard Odhiambo - Software Developer" 
                   className="w-full h-full object-cover"
                 />
