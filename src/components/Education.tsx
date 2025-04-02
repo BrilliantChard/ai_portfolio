@@ -1,5 +1,3 @@
-
-
 import { GraduationCap, Calendar, Award, BookOpen } from 'lucide-react';
 
 const Education = () => {
@@ -11,8 +9,8 @@ const Education = () => {
       duration: "2020 - 2024",
       description: "Focused on the principles of telecommunications, networking, and information systems. Developed a strong foundation in programming and software development.",
       achievements: [
-        "Graduated with honors (GPA: 3.7/4.0)",
-        "President of the Engineering Science Club",
+        "Currently completing final-year coursework with a focus on 5G networks, microwave communications, and software engineering",
+        "Actively working on projects involving backend development with Python and Django",
         "Completed a thesis on '5G Network Optimization Techniques'",
         "Internship at KBC, Kenya Kenya in Telecom & Network Engineering Department",
       ]
@@ -115,7 +113,6 @@ const Education = () => {
                       <p className="text-blue-600">{cert.issuer}</p>
                       <div className="flex mt-1 text-sm text-slate-600">
                         <span className="mr-3">Issued: {cert.date}</span>
-                        {/* Removed ID as it does not exist */}
                       </div>
                     </div>
                   </div>
