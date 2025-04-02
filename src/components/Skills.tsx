@@ -4,31 +4,6 @@ import { Code, Server, Database, Layout, Settings, Shield } from 'lucide-react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
-      icon: <Layout className="h-8 w-8 text-blue-600" />,
-      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Vue.js", "Angular", "Tailwind CSS", "SASS/SCSS", "Redux", "Jest", "Cypress"]
-    },
-    {
-      title: "Backend Development",
-      icon: <Server className="h-8 w-8 text-blue-600" />,
-      skills: ["Node.js", "Express", "Python", "Django", "Ruby on Rails", "PHP", "Laravel", "ASP.NET", "Spring Boot", "GraphQL", "REST API"]
-    },
-    {
-      title: "Database",
-      icon: <Database className="h-8 w-8 text-blue-600" />,
-      skills: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "SQLite", "Firebase", "Oracle", "Microsoft SQL Server", "Elasticsearch"]
-    },
-    {
-      title: "PCB Design",
-      icon: <Code className="h-8 w-8 text-blue-600" />,
-      skills: ["KiCAD", "Altium Designer", "Eagle", "OrCAD", "LTspice", "Multisim", "Proteus", "EasyEDA"]
-    },
-    {
-      title: "Antenna Design",
-      icon: <Code className="h-8 w-8 text-blue-600" />,
-      skills: ["HFSS", "CST Microwave Studio", "FEKO", "ADS", "MATLAB", "Ansys"]
-    },
-    {
       title: "Electronics",
       icon: <Code className="h-8 w-8 text-blue-600" />,
       skills: ["Circuit Design", "Signal Processing", "RF Design", "Embedded Systems", "Microcontrollers", "FPGA", "PCB Layout"]
@@ -39,9 +14,34 @@ const Skills = () => {
       skills: ["AC Machines", "DC Machines", "Transformers", "Power Electronics", "Control Systems", "Signal Processing"]
     },
     {
+      title: "PCB Design",
+      icon: <Code className="h-8 w-8 text-blue-600" />,
+      skills: ["KiCAD", "Altium Designer", "Eagle", "OrCAD", "LTspice", "Multisim", "Proteus", "EasyEDA"]
+    },
+    {
+      title: "Frontend Development",
+      icon: <Layout className="h-8 w-8 text-blue-600" />,
+      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS"]
+    },
+    {
+      title: "Backend Development",
+      icon: <Server className="h-8 w-8 text-blue-600" />,
+      skills: ["Node.js", "Express", "Python", "Django", "REST API"]
+    },
+    {
+      title: "Database",
+      icon: <Database className="h-8 w-8 text-blue-600" />,
+      skills: ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "Oracle", "Microsoft SQL Server", "Elasticsearch"]
+    },
+    {
+      title: "Antenna Design",
+      icon: <Code className="h-8 w-8 text-blue-600" />,
+      skills: ["HFSS", "CST Microwave Studio", "FEKO", "ADS", "MATLAB", "Ansys"]
+    },
+    {
       title: "Programming Languages",
       icon: <Code className="h-8 w-8 text-blue-600" />,
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "C#", "Ruby", "PHP", "Go", "Swift", "Kotlin"]
+      skills: ["JavaScript", "TypeScript", "Python", "Java", "Kotlin"]
     },
     {
       title: "Security",
@@ -58,17 +58,17 @@ const Skills = () => {
   ];
 
   const keySkills = [
-    { name: "Antenna Design", level: "Advanced" },
+    { name: "Antenna Design", level: "Expert" },
     { name: "Electronics", level: "Expert" },
     { name: "PCB Design", level: "Advanced" },
-    { name: "Networking", level: "Intermediate" },
+    { name: "Networking", level: "Advanced" },
     { name: "JavaScript", level: "Expert" },
-    { name: "React", level: "Expert" },
+    { name: "React", level: "Intermediate" },
     { name: "Node.js", level: "Advanced" },
     { name: "TypeScript", level: "Advanced" },
     { name: "PostgreSQL", level: "Advanced" },
     { name: "MATLAB", level: "Expert" },
-    { name: "Python", level: "Advanced" },
+    { name: "Python", level: "Expert" },
     { name: "Django", level: "Intermediate" },
     { name: "KiCAD", level: "Advanced" },
     { name: "Signal Processing", level: "Expert" }

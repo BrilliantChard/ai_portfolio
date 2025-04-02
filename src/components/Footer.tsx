@@ -74,7 +74,7 @@ const Footer = () => {
         <div className="text-center mt-8 text-slate-400 flex items-center justify-center">
           <span>Made with</span>
           <Heart className="w-4 h-4 mx-1 text-red-500 fill-red-500" />
-          <span>in 2023</span>
+          <span>in 2025</span>
         </div>
       </div>
     </footer>

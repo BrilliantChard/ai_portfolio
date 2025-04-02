@@ -12,8 +12,8 @@ const About = () => {
             <div className="flex flex-col items-center">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-100 mb-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
-                  alt="John Doe" 
+                  src="/IMAGES/Kokgate.jpg" 
+                  alt="Chard Omollo" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -31,7 +31,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center text-slate-600">
                   <Mail className="w-5 h-5 mr-3 text-blue-600" />
-                  <a href="mailto:john.doe@example.com" className="hover:text-blue-600">chard.omollo25@gmail.com</a>
+                  <a href="mailto:chard.omollo25@gmail.com" className="hover:text-blue-600">chard.omollo25@gmail.com</a>
                 </div>
                 <div className="flex items-center text-slate-600">
                   <Phone className="w-5 h-5 mr-3 text-blue-600" />

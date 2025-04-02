@@ -9,8 +9,8 @@ const Projects = () => {
     {
       title: "Microstrip Patch Antenna Design and Simulation for 5G Applications",
       description: "Designed and simulated a microstrip patch antenna using HFSS for 5G applications, achieving a significant increase in efficiency.",
-      image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
-      category: "Antenna Design",
+      image: "/IMAGES/E field.jpeg",
+      category: "Telecommunications",
       technologies: ["HFSS", "MATLAB", "5G", "Antenna Design"],
       liveLink: "https://5g-antenna-design.example.com",
       features: [
@@ -41,6 +41,7 @@ const Projects = () => {
       title: "Exam Management System",
       description: "A web-based application for managing student exams, including scheduling, grading, and reporting.",
       image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+      technologies: ["Python", "Django", "React", "Node.js", "MongoDB"],
       category: "fullstack",
       features: [
         "User-friendly interface for students and instructors",
@@ -70,18 +71,18 @@ const Projects = () => {
             All Projects
           </button>
           <button 
-            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'frontend' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
-            onClick={() => setFilter('frontend')}
+            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'telecommunications' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
+            onClick={() => setFilter('telecommunications')}
           >
             <Monitor className="w-4 h-4 inline mr-1" />
-            Frontend
+            Telecommunications
           </button>
           <button 
-            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'backend' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
-            onClick={() => setFilter('backend')}
+            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'iot' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
+            onClick={() => setFilter('iot')}
           >
             <Server className="w-4 h-4 inline mr-1" />
-            Backend
+            IoT
           </button>
           <button 
             className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'fullstack' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}

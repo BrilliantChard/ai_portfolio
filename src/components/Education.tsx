@@ -5,7 +5,7 @@ import { GraduationCap, Calendar, Award, BookOpen } from 'lucide-react';
 const Education = () => {
   const education = [
     {
-      degree: "Barchelors Science in Telecommunication and Information Engineering",
+      degree: "Bachelors of Science in Telecommunication and Information Engineering",
       institution: "Dedan Kimathi University of Technology",
       location: "Nyeri, Kenya",
       duration: "2020 - 2024",
@@ -14,39 +14,40 @@ const Education = () => {
         "Graduated with honors (GPA: 3.7/4.0)",
         "President of the Engineering Science Club",
         "Completed a thesis on '5G Network Optimization Techniques'",
-        "Internship at Safaricom Kenya in Network Engineering Department",
+        "Internship at KBC, Kenya Kenya in Telecom & Network Engineering Department",
       ]
     },
-    {
-      degree: "Bachelor of Engineering in Software Engineering",
-      institution: "University of Washington",
-      location: "Seattle, WA",
-      duration: "2010 - 2014",
-      description: "Comprehensive program covering software development methodologies, data structures, algorithms, and system design principles.",
-      achievements: [
-        "Graduated summa cum laude (GPA: 3.8/4.0)",
-        "President of the University Coding Club",
-        "Completed capstone project 'Smart Campus Navigation System'",
-        "Dean's List for all semesters"
-      ]
-    }
   ];
   
   const certifications = [
     {
       title: "PCB Design Using KiCAD - Professional",
       issuer: "Udemy Acadmey",
-      date: "2024"
+      date: "2024",
+      pdf: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-e17e5995-4b0a-4c88-9930-92547b5b65f1.pdf"
     },
     {
       title: "Network Security and Database Management",
       issuer: "Cisco Networking Academy",
-      date: "2023"
+      date: "2023",
+    },
+    {
+      title: "Arduino for Robotics",
+      issuer: "MindLuster Academy",
+      date: "2023",
+      pdf: "https://www.mindluster.com/student/certificate/0706a395"
+    },
+    {
+      title: "Python for Everybody Specialization",
+      issuer: "Coursera",
+      date: "2023",
+      pdf: "https://www.coursera.org/account/accomplishments/specialization/certificate/9E7JYQZB3F7R"
     },
     {
       title: "Digital Electronics Fundamentals",
       issuer: "Mind Luster",
-      date: "2025"
+      date: "2025",
+      pdf: "https://www.mindluster.com/student/certificate/84c509be"
     },
     {
       title: "Cisco Certified Network Associate (CCNA)",
@@ -138,6 +139,9 @@ const Education = () => {
               
               <ul className="list-disc pl-5 space-y-2 text-slate-600">
                 <li>Software Engineering</li>
+                <li>Cisco Certified Network Associate (CCNA)</li>
+                <li>Advanced Python Programming</li>
+                <li>Electrical Machines and Design Principles</li>
                 <li>Serverless Computing and FaaS (Function as a Service)</li>
                 <li>Progressive Web Applications (PWAs)</li>
                 <li>Machine Learning for Developers</li>
