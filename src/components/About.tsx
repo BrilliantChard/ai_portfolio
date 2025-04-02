@@ -12,7 +12,7 @@ const About = () => {
             <div className="flex flex-col items-center">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-100 mb-4">
                 <img 
-                  src="/IMAGES/Kokgate.jpg" 
+                  src="/lovable-uploads/fd6b0b07-6007-4631-9096-9b5c950cf9bc.png" 
                   alt="Chard Omollo" 
                   className="w-full h-full object-cover"
                 />
@@ -43,7 +43,7 @@ const About = () => {
                 </div>
                 <div className="flex items-center text-slate-600">
                   <Globe className="w-5 h-5 mr-3 text-blue-600" />
-                  <a href="https://www.johndoe.dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">www.chardotiato.dev</a>
+                  <a href="https://www.chardotiato.dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">www.chardotiato.dev</a>
                 </div>
               </div>
               
