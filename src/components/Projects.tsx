@@ -37,7 +37,7 @@ const Projects = () => {
     {
       title: "Exam Management System",
       description: "A web-based application for managing student exams, including scheduling, grading, and reporting.",
-      image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+      image: "/lovable-uploads/349a3afc-e5d1-4910-893a-ea68aa34cb74.png",
       technologies: ["Python", "Django", "React", "Node.js", "MongoDB"],
       category: "fullstack",
       features: [
