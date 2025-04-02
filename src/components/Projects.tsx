@@ -23,7 +23,7 @@ const Projects = () => {
     {
       title: "Smart Farming IoT System",
       description: "Developed an IoT-based smart farming system for real-time monitoring and control of agricultural parameters.",
-      image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
+      image: "/lovable-uploads/68c24496-6f70-4650-af4a-bdc75fc9ce01.png",
       category: "IoT",
       technologies: ["IoT", "Node-RED", "Weather APIs"],
       features: [
