@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { ExternalLink, Github, Monitor, Code, Users, Server } from 'lucide-react';
+import { Monitor, Code, Server } from 'lucide-react';
 
 const Projects = () => {
   const [filter, setFilter] = useState<string>('all');
@@ -12,15 +12,13 @@ const Projects = () => {
       image: "/IMAGES/E field.jpeg",
       category: "Telecommunications",
       technologies: ["HFSS", "MATLAB", "5G", "Antenna Design"],
-      liveLink: "https://5g-antenna-design.example.com",
       features: [
         "Designed a microstrip patch antenna for 5G applications",
         "Conducted simulations using HFSS and MATLAB",
         "Achieved a 15% increase in efficiency",
         "Collaborated with senior engineers for design validation",
         "Participated in field tests for IoT applications"
-      ],
-      githubLink: "https://github.com/example/5g-antenna-design"
+      ]
     },
     {
       title: "Smart Farming IoT System",
@@ -34,8 +32,7 @@ const Projects = () => {
         "Data visualization using Node-RED dashboard",
         "Remote access and control via mobile app",
         "Integration with weather APIs for predictive analytics"
-      ],
-      githubLink: "https://github.com/example/smart-farming-iot"
+      ]
     },
     {
       title: "Exam Management System",
@@ -49,8 +46,7 @@ const Projects = () => {
         "Secure exam scheduling and grading",
         "Comprehensive reporting and analytics",
         "Responsive design for mobile and desktop"
-      ],
-      githubLink: "https://github.com/example/exam-management-system"
+      ]
     }
   ];
   
@@ -121,27 +117,6 @@ const Projects = () => {
             </div>
             
             <p className="text-slate-600 mb-4 line-clamp-3">{project.description}</p>
-            
-            <div className="mt-auto flex gap-3">
-              <a 
-                href={project.liveLink} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
-              >
-                <ExternalLink className="w-4 h-4 mr-1" />
-                Live Demo
-              </a>
-              <a 
-                href={project.githubLink} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-flex items-center text-sm font-medium text-slate-700 hover:text-slate-900"
-              >
-                <Github className="w-4 h-4 mr-1" />
-                View Code
-              </a>
-            </div>
           </div>
         ))}
       </div>
