@@ -1,4 +1,5 @@
 
+
 import { GraduationCap, Calendar, Award, BookOpen } from 'lucide-react';
 
 const Education = () => {
@@ -113,7 +114,7 @@ const Education = () => {
                       <p className="text-blue-600">{cert.issuer}</p>
                       <div className="flex mt-1 text-sm text-slate-600">
                         <span className="mr-3">Issued: {cert.date}</span>
-                        <span>ID: {cert.id}</span>
+                        {/* Removed ID as it does not exist */}
                       </div>
                     </div>
                   </div>

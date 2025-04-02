@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { ExternalLink, Github, Monitor, Code, Users, Server } from 'lucide-react';
 
 const Projects = () => {
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState<string>('all');
   
   const projects = [
     {
@@ -19,40 +19,41 @@ const Projects = () => {
         "Achieved a 15% increase in efficiency",
         "Collaborated with senior engineers for design validation",
         "Participated in field tests for IoT applications"
-      ]
+      ],
+      githubLink: "https://github.com/example/5g-antenna-design"
     },
     {
-      title: "Samrt Farming IoT System",
+      title: "Smart Farming IoT System",
       description: "Developed an IoT-based smart farming system for real-time monitoring and control of agricultural parameters.",
       image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
       category: "IoT",
-      technologies: ["Arduino", "Raspberry Pi", "MQTT", "Node-RED"],
+      technologies: ["IoT", "Node-RED", "Weather APIs"],
       features: [
         "Real-time monitoring of soil moisture and temperature",
         "Automated irrigation control based on sensor data",
         "Data visualization using Node-RED dashboard",
         "Remote access and control via mobile app",
         "Integration with weather APIs for predictive analytics"
-      ]
+      ],
+      githubLink: "https://github.com/example/smart-farming-iot"
     },
     {
       title: "Exam Management System",
       description: "A web-based application for managing student exams, including scheduling, grading, and reporting.",
       image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80",
       category: "fullstack",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
-      liveLink: "https://exam-management-system.example.com",
       features: [
         "User-friendly interface for students and instructors",
         "Real-time notifications and updates",
         "Secure exam scheduling and grading",
         "Comprehensive reporting and analytics",
         "Responsive design for mobile and desktop"
-      ]
-    },
+      ],
+      githubLink: "https://github.com/example/exam-management-system"
+    }
   ];
   
-  const filteredProjects = filter === 'all' 
+  const filteredProjects = filter === 'all'
     ? projects 
     : projects.filter(project => project.category === filter);
   
