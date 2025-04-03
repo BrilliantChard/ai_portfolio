@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Monitor, Code, Server } from 'lucide-react';
+import { Monitor, Code, Server, TrafficCone } from 'lucide-react';
 
 const Projects = () => {
   const [filter, setFilter] = useState<string>('all');
@@ -47,6 +47,20 @@ const Projects = () => {
         "Comprehensive reporting and analytics",
         "Responsive design for mobile and desktop"
       ]
+    },
+    {
+      title: "Design of Traffic Lighting System using KICAD",
+      description: "Designed a traffic lighting system using KICAD, focusing on efficient and reliable control of traffic flow.",
+      image: "/lovable-uploads/e623b62e-ec71-48fb-8941-e6d698d7b117.png",
+      category: "electronics",
+      technologies: ["KICAD", "PCB Design", "Embedded Systems"],
+      features: [
+        "Designed a PCB for a traffic light controller",
+        "Used KICAD for schematic capture and PCB layout",
+        "Implemented a microcontroller-based control system",
+        "Optimized power consumption for extended battery life",
+        "Incorporated fail-safe mechanisms for critical traffic scenarios"
+      ]
     }
   ];
   
@@ -86,6 +100,13 @@ const Projects = () => {
           >
             <Code className="w-4 h-4 inline mr-1" />
             Full Stack
+          </button>
+          <button 
+            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'electronics' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
+            onClick={() => setFilter('electronics')}
+          >
+            <TrafficCone className="w-4 h-4 inline mr-1" />
+            Electronics
           </button>
         </div>
       </div>
