@@ -10,10 +10,10 @@ const Experience = () => {
       duration: "January 2025 - Present",
       description: "Responsible for the design, implementation, and maintenance of telecommunication systems, ensuring optimal performance and reliability.",
       achievements: [
-        "Successfully led the upgrade of the transmission system, improving signal quality by 30%",
-        "Implemented a new monitoring system that reduced downtime by 20%",
-        "Collaborated with cross-functional teams to enhance network security protocols",
-        "Conducted training sessions for junior engineers on best practices in telecommunication systems"
+        "1️⃣ Broadcast Transmission Experience – Hands-on skills in DTT (DVB-T2), signal encoding, multiplexing, and troubleshooting.",
+        "2️⃣ Fiber Optic & IP Transmission – Knowledge of fiber optic signal distribution, IP-based broadcasting, and DVB over IP.",
+        "3️⃣ Networking & Cybersecurity – Exposure to networked broadcast systems, remote monitoring, and cybersecurity best practices.",
+        "4️⃣ Technical Documentation – Improved skills in writing reports, maintenance logs, and troubleshooting documentation."
       ],
       technologies: ["RF Design", "Signal Processing", "Network Security", "Telecom Protocols", "Project Management"]
     },
@@ -24,10 +24,10 @@ const Experience = () => {
       duration: "May 2023 - August 2023",
       description: "Worked on the design and implementation of electrical systems for telecommunications infrastructure, focusing on energy efficiency and sustainability.",
       achievements: [
-        "Designed a solar-powered base station that reduced energy costs by 40%",
-        "Implemented energy-saving protocols that decreased overall power consumption by 25%",
-        "Collaborated with the R&D team to develop new energy-efficient technologies",
-        "Conducted field tests and analysis to ensure compliance with safety standards"
+        "1️⃣ Power Generation & Electrical Systems – Hands-on experience with motors, generators, transformers, and power distribution.",
+        "2️⃣ Instrumentation & Control – Working with sensors, PLCs, SCADA systems, and industrial automation.",
+        "3️⃣ Maintenance & Troubleshooting – Skills in diagnosing faults, repairing electrical equipment, and preventive maintenance.",
+        "4️⃣ Technical Documentation – Improved ability to document procedures, maintenance logs, and system reports."
       ],
       technologies: ["AutoCAD", "MATLAB", "Energy Management Systems", "Telecom Infrastructure", "Project Management"]
     },

@@ -1,3 +1,4 @@
+
 import { GraduationCap, Calendar, Award, BookOpen } from 'lucide-react';
 
 const Education = () => {
@@ -9,10 +10,11 @@ const Education = () => {
       duration: "2020 - 2024",
       description: "Focused on the principles of telecommunications, networking, and information systems. Developed a strong foundation in programming and software development.",
       achievements: [
-        "Currently completing final-year coursework with a focus on 5G networks, microwave communications, and software engineering",
-        "Actively working on projects involving backend development with Python and Django",
-        "Completed a thesis on '5G Network Optimization Techniques'",
-        "Internship at KBC, Kenya Kenya in Telecom & Network Engineering Department",
+        "Completed final-year coursework with a focus on 5G networks, microwave communications, and embedded systems.",
+        "Actively working on projects involving backend development with Python (Django) and IoT applications.",
+        "Completed a thesis on "5G Network Optimization Techniques and Antenna Design for mmWave Applications."",
+        "Internship at KBC, Kenya in the Telecom & Network Engineering Department, gaining experience in digital TV transmission, fiber optics, and cybersecurity.",
+        "Previous attachment at KENGEN in Power Systems & Instrumentation, focusing on electrical maintenance, PLCs, and SCADA systems."
       ]
     },
   ];
