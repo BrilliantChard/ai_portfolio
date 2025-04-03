@@ -12,7 +12,7 @@ const Education = () => {
       achievements: [
         "Completed final-year coursework with a focus on 5G networks, microwave communications, and embedded systems.",
         "Actively working on projects involving backend development with Python (Django) and IoT applications.",
-        "Completed a thesis on "5G Network Optimization Techniques and Antenna Design for mmWave Applications."",
+        "Completed a thesis on \"5G Network Optimization Techniques and Antenna Design for mmWave Applications.\"",
         "Internship at KBC, Kenya in the Telecom & Network Engineering Department, gaining experience in digital TV transmission, fiber optics, and cybersecurity.",
         "Previous attachment at KENGEN in Power Systems & Instrumentation, focusing on electrical maintenance, PLCs, and SCADA systems."
       ]
