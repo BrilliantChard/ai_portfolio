@@ -1,16 +1,20 @@
 
 import { useState } from 'react';
 import { Monitor, Code, Server, TrafficCone } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const Projects = () => {
   const [filter, setFilter] = useState<string>('all');
+  const isMobile = useIsMobile();
   
   const projects = [
     {
       title: "Microstrip Patch Antenna Design and Simulation for 5G Applications",
       description: "Designed and simulated a microstrip patch antenna using HFSS for 5G applications, achieving a significant increase in efficiency.",
-      image: "/IMAGES/E field.jpeg",
-      category: "Telecommunications",
+      image: "/lovable-uploads/85ae7207-6631-4e5f-9c08-735e46205050.png",
+      category: "telecommunications",
       technologies: ["HFSS", "MATLAB", "5G", "Antenna Design"],
       features: [
         "Designed a microstrip patch antenna for 5G applications",
@@ -70,74 +74,78 @@ const Projects = () => {
   
   return (
     <div className="container mx-auto px-4 md:px-6">
-      <h2 className="section-title text-center">My Projects</h2>
+      <h2 className="section-title text-center mb-8 text-2xl md:text-3xl font-bold">My Projects</h2>
       
-      <div className="flex justify-center mt-8 mb-12">
-        <div className="inline-flex p-1 bg-slate-100 rounded-lg">
+      <div className="flex justify-center mt-8 mb-12 overflow-x-auto">
+        <div className={`inline-flex p-1 bg-slate-100 rounded-lg ${isMobile ? 'w-full' : ''}`}>
           <button 
-            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'all' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
+            className={`px-3 md:px-4 py-2 rounded-md text-xs md:text-sm font-medium transition-colors whitespace-nowrap ${filter === 'all' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
             onClick={() => setFilter('all')}
           >
             All Projects
           </button>
           <button 
-            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'telecommunications' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
+            className={`px-3 md:px-4 py-2 rounded-md text-xs md:text-sm font-medium transition-colors whitespace-nowrap ${filter === 'telecommunications' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
             onClick={() => setFilter('telecommunications')}
           >
-            <Monitor className="w-4 h-4 inline mr-1" />
+            <Monitor className="w-3 h-3 md:w-4 md:h-4 inline mr-1" />
             Telecommunications
           </button>
           <button 
-            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'iot' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
+            className={`px-3 md:px-4 py-2 rounded-md text-xs md:text-sm font-medium transition-colors whitespace-nowrap ${filter === 'iot' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
             onClick={() => setFilter('iot')}
           >
-            <Server className="w-4 h-4 inline mr-1" />
+            <Server className="w-3 h-3 md:w-4 md:h-4 inline mr-1" />
             IoT
           </button>
           <button 
-            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'fullstack' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
+            className={`px-3 md:px-4 py-2 rounded-md text-xs md:text-sm font-medium transition-colors whitespace-nowrap ${filter === 'fullstack' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
             onClick={() => setFilter('fullstack')}
           >
-            <Code className="w-4 h-4 inline mr-1" />
+            <Code className="w-3 h-3 md:w-4 md:h-4 inline mr-1" />
             Full Stack
           </button>
           <button 
-            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${filter === 'electronics' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
+            className={`px-3 md:px-4 py-2 rounded-md text-xs md:text-sm font-medium transition-colors whitespace-nowrap ${filter === 'electronics' ? 'bg-white shadow text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}
             onClick={() => setFilter('electronics')}
           >
-            <TrafficCone className="w-4 h-4 inline mr-1" />
+            <TrafficCone className="w-3 h-3 md:w-4 md:h-4 inline mr-1" />
             Electronics
           </button>
         </div>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="card group overflow-hidden">
-            <div className="aspect-video overflow-hidden rounded-lg mb-4">
-              <img 
-                src={project.image} 
-                alt={project.title} 
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-              />
+          <div key={index} className="card group overflow-hidden border border-slate-200 rounded-lg bg-white shadow-sm hover:shadow-md transition-all">
+            <div className="aspect-video overflow-hidden rounded-t-lg">
+              <AspectRatio ratio={16/9}>
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                />
+              </AspectRatio>
             </div>
             
-            <h3 className="text-xl font-semibold text-slate-800 mb-2">{project.title}</h3>
-            
-            <div className="flex flex-wrap gap-2 mb-3">
-              {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                <span key={techIndex} className="skill-badge">
-                  {tech}
-                </span>
-              ))}
-              {project.technologies.length > 3 && (
-                <span className="skill-badge">
-                  +{project.technologies.length - 3}
-                </span>
-              )}
+            <div className="p-4 md:p-6">
+              <h3 className="text-lg md:text-xl font-semibold text-slate-800 mb-2 line-clamp-2">{project.title}</h3>
+              
+              <div className="flex flex-wrap gap-2 mb-3">
+                {project.technologies.slice(0, 3).map((tech, techIndex) => (
+                  <Badge key={techIndex} variant="secondary" className="text-xs">
+                    {tech}
+                  </Badge>
+                ))}
+                {project.technologies.length > 3 && (
+                  <Badge variant="outline" className="text-xs">
+                    +{project.technologies.length - 3}
+                  </Badge>
+                )}
+              </div>
+              
+              <p className="text-sm text-slate-600 mb-4 line-clamp-3">{project.description}</p>
             </div>
-            
-            <p className="text-slate-600 mb-4 line-clamp-3">{project.description}</p>
           </div>
         ))}
       </div>

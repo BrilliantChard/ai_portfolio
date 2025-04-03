@@ -54,21 +54,21 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-3 md:py-5'}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <a href="#home" className="text-2xl font-bold text-blue-600" onClick={() => handleNavClick('home')}>
-            Dev<span className="text-slate-800">Portfolio</span>
+          <a href="#home" className="text-xl md:text-2xl font-bold text-blue-600" onClick={() => handleNavClick('home')}>
+            Chard<span className="text-slate-800">Omollo</span>
           </a>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.id}
                 href={`#${link.id}`}
                 onClick={() => handleNavClick(link.id)}
-                className={`nav-link ${activeSection === link.id ? 'text-blue-600 font-semibold' : 'text-slate-700'}`}
+                className={`nav-link text-sm ${activeSection === link.id ? 'text-blue-600 font-semibold' : 'text-slate-700'}`}
               >
                 {link.label}
               </a>
@@ -79,6 +79,7 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
           <button 
             className="md:hidden text-slate-700 focus:outline-none"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -86,14 +87,14 @@ const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
         
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white mt-4 py-4 rounded-lg shadow-lg">
-            <nav className="flex flex-col space-y-4 px-4">
+          <div className="md:hidden bg-white mt-4 py-4 rounded-lg shadow-lg animate-in fade-in-0 zoom-in-95">
+            <nav className="flex flex-col space-y-3 px-4">
               {navLinks.map((link) => (
                 <a
                   key={link.id}
                   href={`#${link.id}`}
                   onClick={() => handleNavClick(link.id)}
-                  className={`nav-link ${activeSection === link.id ? 'text-blue-600 font-semibold' : 'text-slate-700'}`}
+                  className={`nav-link py-2 ${activeSection === link.id ? 'text-blue-600 font-semibold' : 'text-slate-700'}`}
                 >
                   {link.label}
                 </a>
