@@ -50,7 +50,7 @@
   }
   
   .card {
-    @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
+    @apply bg-white/90 backdrop-blur-sm rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
   }
   
   .skill-badge {
@@ -63,5 +63,16 @@
   
   .btn-primary {
     @apply px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200;
+  }
+  
+  .engineering-section {
+    @apply relative z-10;
+  }
+  
+  .engineering-section::before {
+    @apply content-[''] absolute inset-0 z-[-1] opacity-10;
+    background-size: 20px 20px;
+    background-image: linear-gradient(to right, #888 1px, transparent 1px),
+                      linear-gradient(to bottom, #888 1px, transparent 1px);
   }
 }
