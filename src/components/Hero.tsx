@@ -44,7 +44,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="absolute -z-10 top-4 left-4 w-full h-full rounded-full bg-blue-400"></div>
+            <div className="absolute -z-10 top-4 left-4 w-full h-full rounded-full bg-blue-300"></div>
           </div>
         </div>
         
