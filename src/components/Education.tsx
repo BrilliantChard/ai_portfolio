@@ -1,6 +1,5 @@
 
-import { GraduationCap, Calendar, Award, BookOpen, FileText } from 'lucide-react';
-import PdfViewer from './PdfViewer';
+import { GraduationCap, Calendar, Award, BookOpen } from 'lucide-react';
 
 const Education = () => {
   const education = [
@@ -57,9 +56,6 @@ const Education = () => {
     }
   ];
   
-  // Sample resume PDF URL - replace with your actual PDF URL after uploading
-  const resumePdf = "/lovable-uploads/resume.pdf"; // This will need to be uploaded
-  
   return (
     <div className="container mx-auto px-4 md:px-6">
       <h2 className="section-title text-center">Education & Certifications</h2>
@@ -100,35 +96,6 @@ const Education = () => {
               </div>
             ))}
           </div>
-          
-          {/* Resume PDF */}
-          <div className="mt-8">
-            <h3 className="text-xl font-semibold text-slate-800 mb-4 flex items-center">
-              <FileText className="w-5 h-5 mr-2 text-blue-600" />
-              Resume / CV
-            </h3>
-            
-            <div className="card">
-              <p className="text-slate-600 mb-4">
-                Download my resume to get a comprehensive overview of my education, skills, and experiences.
-              </p>
-              
-              {/* Uncomment when you have uploaded the PDF */}
-              {/* <PdfViewer 
-                pdfUrl={resumePdf}
-                title="Chard Odhiambo - Resume/CV"
-                description="Professional resume highlighting my education, skills, and work experience."
-              /> */}
-              
-              {/* Placeholder until PDF is uploaded */}
-              <div className="bg-slate-100 dark:bg-slate-700 p-6 rounded-lg text-center">
-                <FileText className="w-12 h-12 mx-auto text-blue-500 mb-2" />
-                <p className="text-slate-600 dark:text-slate-300 mb-4">
-                  Upload your resume PDF file to display it here
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
         
         <div className="lg:pl-8">
@@ -137,46 +104,22 @@ const Education = () => {
             Professional Certifications
           </h3>
           
-          <div className="space-y-6">
-            {certifications.filter(cert => cert.pdf).map((cert, index) => (
-              <div key={index} className="card">
-                <h4 className="font-semibold text-slate-800 mb-2">{cert.title}</h4>
-                <p className="text-blue-600 mb-1">{cert.issuer}</p>
-                <p className="text-sm text-slate-600 mb-3">Issued: {cert.date}</p>
-                
-                {cert.pdf && (
-                  <a 
-                    href={cert.pdf} 
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="text-blue-600 hover:text-blue-800 flex items-center text-sm"
-                  >
-                    <FileText className="w-4 h-4 mr-1" />
-                    View Certificate
-                  </a>
-                )}
-              </div>
-            ))}
-            
-            <div className="card">
-              <h4 className="font-semibold text-slate-800 mb-4">Other Certifications</h4>
-              
-              <div className="grid grid-cols-1 divide-y">
-                {certifications.filter(cert => !cert.pdf).map((cert, index) => (
-                  <div key={index} className="py-4 first:pt-0 last:pb-0">
-                    <div className="flex items-start">
-                      <BookOpen className="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold text-slate-800">{cert.title}</h4>
-                        <p className="text-blue-600">{cert.issuer}</p>
-                        <div className="flex mt-1 text-sm text-slate-600">
-                          <span className="mr-3">Issued: {cert.date}</span>
-                        </div>
+          <div className="card">
+            <div className="grid grid-cols-1 divide-y">
+              {certifications.map((cert, index) => (
+                <div key={index} className="py-4 first:pt-0 last:pb-0">
+                  <div className="flex items-start">
+                    <BookOpen className="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-slate-800">{cert.title}</h4>
+                      <p className="text-blue-600">{cert.issuer}</p>
+                      <div className="flex mt-1 text-sm text-slate-600">
+                        <span className="mr-3">Issued: {cert.date}</span>
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
           
