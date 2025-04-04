@@ -10,25 +10,25 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 min-h-screen flex items-center">
+    <div className="bg-gradient-to-r from-slate-800 to-slate-700 min-h-screen flex items-center">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="md:w-1/2 space-y-6 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight">
-              Hi, I'm <span className="text-blue-600">Chard Odhiambo</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              Hi, I'm <span className="text-blue-400">Chard Odhiambo</span>
             </h1>
-            <div className="h-1 w-20 bg-blue-600 mx-auto md:mx-0"></div>
-            <h2 className="text-2xl md:text-3xl font-medium text-slate-600">
+            <div className="h-1 w-20 bg-blue-400 mx-auto md:mx-0"></div>
+            <h2 className="text-2xl md:text-3xl font-medium text-slate-200">
               Software Developer & Telecom Engineer
             </h2>
-            <p className="text-lg text-slate-600 max-w-xl">
+            <p className="text-lg text-slate-300 max-w-xl">
               I build exceptional digital experiences that are fast, accessible, visually appealing, and responsive.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a href="#contact" className="btn-primary">
                 Get In Touch
               </a>
-              <a href="#projects" className="px-6 py-3 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 transition-colors duration-200">
+              <a href="#projects" className="px-6 py-3 border border-blue-400 text-blue-400 rounded-md hover:bg-slate-700 transition-colors duration-200">
                 View Work
               </a>
             </div>
@@ -44,12 +44,12 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="absolute -z-10 top-4 left-4 w-full h-full rounded-full bg-blue-200"></div>
+            <div className="absolute -z-10 top-4 left-4 w-full h-full rounded-full bg-blue-300"></div>
           </div>
         </div>
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce" onClick={scrollToAbout}>
-          <ArrowDown className="text-blue-600" size={32} />
+          <ArrowDown className="text-blue-400" size={32} />
         </div>
       </div>
     </div>

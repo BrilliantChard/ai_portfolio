@@ -19,7 +19,7 @@ const Index = () => {
       <main>
         <section 
           id="home"
-          className="bg-gradient-to-b from-indigo-900 via-indigo-800 to-indigo-700 dark:from-slate-900 dark:via-indigo-950 dark:to-indigo-900"
+          className="bg-gradient-to-b from-slate-800 via-slate-700 to-slate-600 dark:from-slate-900 dark:via-slate-800 dark:to-slate-700"
         >
           <Hero />
         </section>
